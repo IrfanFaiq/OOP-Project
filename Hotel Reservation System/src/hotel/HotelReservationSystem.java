@@ -19,6 +19,7 @@ public class HotelReservationSystem {
         
         
         Scanner test = new Scanner(System.in);
+        //ola amigo
     }
     
 }
