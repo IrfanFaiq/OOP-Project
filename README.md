@@ -1,4 +1,5 @@
 # OOP-Project
 Code untuk OOP.
-Code test2 je baru.
-    Code ada dlm src path
+Code dah update.
+Code ada dlm src path
+nnti download file, isi code dlm netbean masing2
