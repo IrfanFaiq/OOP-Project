@@ -19,11 +19,13 @@ public class HotelReservationSystem {
         
         int n;
         
-        String [] cust1 = new String[9];
-        
-        Scanner input = new Scanner(System.in);
-        
-        
+        Customer[] customer = new Customer[10];
+
+      
+        Scanner input = new Scanner (System.in);
+      
+     
+     
         System.out.println("Welcome to our Hotel");
         System.out.println("==========================");
         System.out.println("\nPlease Choose you Choice");
@@ -36,17 +38,22 @@ public class HotelReservationSystem {
             System.out.println("How many people:");
             n = input.nextInt();
             
-            System.out.print("Enter Your name:");
-            String cust_name = input.next();
-            System.out.print("Enter Your Phone Num:");
-            String cust_phonenum = input.next();
-            System.out.print("Enter Your email:");
-            String cust_email = input.next();
-            
-            System.out.println("How many days:");
-            int book_days = input.nextInt();
-            
-            
+            for (int i=0;i<n;i++){
+                System.out.println("Name "+(i+1) + ":");
+                customer[i]= new Customer();
+                customer[i].setCust_name(input.next());
+                
+                System.out.println("Phone Number "+(i+1)+":");
+                customer[i].setCust_numphone(input.next());
+                
+                System.out.println("Email "+(i+1)+":");
+                customer[i].setCust_email(input.next());
+            }
+            for (int i =0;i<n;i++){
+                System.out.println("Name:"+customer[i].getCust_name());
+                System.out.println("Phone Number:" +customer[i].getCust_numphone());
+                System.out.println("Email:" +customer[i].getCust_email());
+            }
             }
 
         
