@@ -8,8 +8,12 @@ package hotel;
  *
  * @author jason
  */
-public class Booking extends Customer{
-    public int book_days;
+public class Booking{
+    protected int book_days;
+
+   public Booking(){
+       book_days = 1;
+   }
 
     /**
      * @return the book_days
@@ -24,4 +28,4 @@ public class Booking extends Customer{
     public void setBook_days(int book_days) {
         this.book_days = book_days;
     }
-}
+    }
