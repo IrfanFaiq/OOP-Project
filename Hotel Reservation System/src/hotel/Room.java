@@ -8,22 +8,15 @@ package hotel;
  *
  * @author jason
  */
-public class Room extends Customer {
-    public double room_price;
-
-    /**
-     * @return the room_price
-     */
-    public double getRoom_price() {
-        return room_price;
-    }
-
-    /**
-     * @param room_price the room_price to set
-     */
-    public void setRoom_price(double room_price) {
-        this.room_price = room_price;
-    }
+public class Room extends Customer{
     
-    
+    protected int room_num;
+
+       public void price(){
+        switch (room_type){
+        case "A":
+                room_price = 80;
+                break;
+        }
+    }
 }
