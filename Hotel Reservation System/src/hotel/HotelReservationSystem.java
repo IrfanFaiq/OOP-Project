@@ -57,11 +57,10 @@ public class HotelReservationSystem {
             }
             System.out.println("How many days:");
             booking.setBook_days(input.nextInt());
-            //new code
+            
             System.out.println("Would you like holiday package?");
             System.out.println("1. Yes/ 2. No");
-            int b = input.nextInt();
-            //new code
+            int b = input.nextInt();           
             if(b == 2){
                 cust1.CalculatePrice();
             }else{
@@ -70,7 +69,6 @@ public class HotelReservationSystem {
 
             System.out.println("Enter Check-in Date:");
             cust2.setDate_in(input.next());
-            //new code
             System.out.println("Would you like to leave suggestions?");
             System.out.println("1. Yes/ 2. No");
             int c = input.nextInt();
@@ -89,7 +87,6 @@ public class HotelReservationSystem {
             }
             cust1.roomtype();                        
             System.out.println("Check-in Date: " +cust2.getDate_in());    
-            //new code
             if(b == 2){
                 System.out.println("Total price: " +cust1.getPayment_amount());
             }else{
