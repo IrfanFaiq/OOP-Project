@@ -4,6 +4,8 @@
  */
 package hotel;
 
+import java.util.Scanner;
+
 /**
  *
  * @author jason
@@ -11,24 +13,69 @@ package hotel;
 public class Payment extends Customer{
 
     public String payment_date;
-  
+    public double payment_amount;
+    protected double room_price;
+    public String room_type;
+    HolidayPackage a1 = new HolidayPackage();
+    double a = a1.package_price;
    
     
     public Payment (Booking booking){
     this.booking = booking;
-}
-/*    public Payment (HolidayPackage hol_pack){
-        this.hol_pack = hol_pack;
-    }*///test new code
-            
+} 
+    
+    Scanner myObj = new Scanner(System.in); 
+    
     public double CalculatePrice(){
-        total_payment= booking.getBook_days() * 100;
-        return getTotal_payment();
+        System.out.println("Please Choose Package:");
+        System.out.println("A:Deluxe = RM 80\nB:Premium = RM70\nC:Normal = RM60");
+        String room_type = myObj.next();
+        
+        switch (room_type){
+            case "A": 
+                room_price = 80;
+                break;
+            case "B":
+                room_price = 70;
+                break;
+            case "C":
+                room_price = 60;
+                break;
+        }
+        payment_amount = room_price * booking.getBook_days();
+        return payment_amount;
     }
     
-    public double CalculatePricePromo(){
-       // total_payment= (booking.getBook_days() * 100)* hol_pack.getPackage_price();//test new code
-        return getTotal_payment();
+    public double CalculatePriceHolidayPack(){
+        System.out.println("Please Choose Package:");
+        System.out.println("A:Deluxe = RM 80\nB:Premium = RM70\nC:Normal = RM60");
+        String room_type = myObj.next();
+        
+        switch (room_type){
+            case "A": 
+                room_price = 80;
+                break;
+            case "B":
+                room_price = 70;
+                break;
+            case "C":
+                room_price = 60;
+                break;
+        }
+        payment_amount = (room_price * booking.getBook_days())-(room_price * booking.getBook_days() * a);
+        return payment_amount;
+    }
+    
+    public void roomtype(){
+        if (room_price == 80){
+            System.out.println("Booking Room: Deluxe");
+        }
+        else if (room_price == 70){
+            System.out.println("Booking Room: Premium");
+        }
+        else {
+            System.out.println("Booking Room: Normal");            
+        }
     }
 
     /**
@@ -44,4 +91,19 @@ public class Payment extends Customer{
     public void setBooking(Booking booking) {
         this.booking = booking;
     }
+
+    /**
+     * @return the payment_amount
+     */
+    public double getPayment_amount() {
+        return payment_amount;
+    }
+
+    /**
+     * @param payment_amount the payment_amount to set
+     */
+    public void setPayment_amount(double payment_amount) {
+        this.payment_amount = payment_amount;
+    }
+   
  }
