@@ -10,13 +10,35 @@ package hotel;
  */
 public class Room extends Customer{
     
-    protected int room_num;
+    public int room_num;
+    public String date_in;
 
-       public void price(){
-        switch (room_type){
-        case "A":
-                room_price = 80;
-                break;
-        }
+    /**
+     * @return the room_num
+     */
+    public int getRoom_num() {
+        return room_num;
     }
+
+    /**
+     * @param room_num the room_num to set
+     */
+    public void setRoom_num(int room_num) {
+        this.room_num = room_num;
+    }
+
+    /**
+     * @return the date_in
+     */
+    public String getDate_in() {
+        return date_in;
+    }
+
+    /**
+     * @param date_in the date_in to set
+     */
+    public void setDate_in(String date_in) {
+        this.date_in = date_in;
+    }
+
 }
