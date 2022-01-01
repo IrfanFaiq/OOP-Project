@@ -2,4 +2,5 @@
 Code untuk OOP.
 Code dah update.
 Code ada dlm src/hotel path.
-Nnti download file, isi code dlm netbean masing2 pastu update kat sini
+Code rasanya cam dh final, so kalau dh xde nak tambah pape pun ok dah ni
+Nnti download file, test run, klau ada tambah code boleh update
