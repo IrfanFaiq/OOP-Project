@@ -85,7 +85,11 @@ public class HotelReservationSystem {
                 System.out.println("Phone Number:" +customer[i].getCust_numphone());
                 System.out.println("Email:" +customer[i].getCust_email());
             }
-            cust1.roomtype();                        
+            if(b == 2){
+                cust1.roomtype();
+            }else{
+                cus1.roomtype();
+            }                      
             System.out.println("Check-in Date: " +cust2.getDate_in());    
             if(b == 2){
                 System.out.println("Total price: " +cust1.getPayment_amount());
