@@ -1,21 +1,19 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package hotel;
 
 /**
  *
- * @author jason
+ * @author User
  */
 abstract public class Customer {
     protected String cust_id;
     protected String cust_name;
     protected String cust_numphone;
     protected String cust_email;
-    protected double total_payment;
-    protected double room_price;
-    protected String room_type;
     protected Booking booking;
     
     public Customer(){
@@ -24,14 +22,6 @@ abstract public class Customer {
         this.cust_email = "ahmad123@gmail.com";
     }
     
-    public void price(){
-        switch (room_type){
-        case "A":
-                room_price = 80;
-                break;
-        }
-    }
-
     /**
      * @return the cust_id
      */
@@ -88,47 +78,5 @@ abstract public class Customer {
         this.cust_email = cust_email;
     }
 
-    /**
-     * @return the total_payment
-     */
-    public double getTotal_payment() {
-        return total_payment;
-    }
 
-    /**
-     * @param total_payment the total_payment to set
-     */
-    public void setTotal_payment(double total_payment) {
-        this.total_payment = total_payment;
-    }
-
-    /**
-     * @return the room_type
-     */
-    public String getRoom_type() {
-        return room_type;
-    }
-
-    /**
-     * @param room_type the room_type to set
-     */
-    public void setRoom_type(String room_type) {
-        this.room_type = room_type;
-    }
-
-    /**
-     * @return the room_price
-     */
-    public double getRoom_price() {
-        return room_price;
-    }
-
-    /**
-     * @param room_price the room_price to set
-     */
-    public void setRoom_price(double room_price) {
-        this.room_price = room_price;
-    }
- 
 }
-
