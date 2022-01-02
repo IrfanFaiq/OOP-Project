@@ -32,16 +32,16 @@ public class HotelReservationSystem {
       
      
      
-        System.out.println("Welcome to our Hotel");
+        System.out.println("Welcome to Hotel Mania");
         System.out.println("==========================");
-        System.out.println("\nPlease Choose you Choice");
+        System.out.println("\nPlease Enter your choice");
         System.out.println("1. Enter");
         System.out.println("2. Exit");
         int a = input.nextInt();
         
         if (a == 1 ){
             System.out.println("\nMain Menu");
-            System.out.println("How many people:");
+            System.out.println("Number of Guests :");
             n = input.nextInt();
             
             for (int i=0;i<n;i++){
@@ -55,10 +55,10 @@ public class HotelReservationSystem {
                 System.out.println("Email "+(i+1)+":");
                 customer[i].setCust_email(input.next());
             }
-            System.out.println("How many days:");
-            booking.setBook_days(input.nextInt());
+            System.out.println("Number of Nights:");
+            booking.setBook_nights(input.nextInt());
             
-            System.out.println("Would you like holiday package?");
+            System.out.println("Would you like a package holiday?");
             System.out.println("1. Yes/ 2. No");
             int b = input.nextInt();           
             if(b == 2){
@@ -69,7 +69,7 @@ public class HotelReservationSystem {
 
             System.out.println("Enter Check-in Date:");
             cust2.setDate_in(input.next());
-            System.out.println("Would you like to leave suggestions?");
+            System.out.println("Do you want to leave some suggestion?");
             System.out.println("1. Yes/ 2. No");
             int c = input.nextInt();
             if(c == 1){
@@ -106,10 +106,10 @@ public class HotelReservationSystem {
             }            
         }
             else if (a == 2){
-            System.out.println("\nGoodbye, Thanks You for choosing our hotel");
+            System.out.println("\nThank You for booking with Hotel Mania. We look forward to welcome you soon");
         }
         else {
-            System.out.println("\nError command not recognize, Please Try Aggain");
+            System.out.println("\nError command not recognize, Please Try Again");
         }
     }
 }
