@@ -37,13 +37,13 @@ interface moreOption{
 
 class Option implements moreOption{
     public void holiday(){
-        System.out.println("Thank you for choosing our holiday package");
+        System.out.println("Thank you for choosing our package holiday");
     }
     public void suggestion(){
-        System.out.println("We appreciate your suggestions and will do our best for future customer satisfaction");
+        System.out.println("We sincerely appreciate your comments and suggestions, thanks for pointing out what we can do better.");
     }
     public void gratitiude(){
-        System.out.println("Thanks for choosing our hotel and have a nice day");
+        System.out.println("Thank You for choosing Hotel Mania, have a nice day!");
     }
     
 }
