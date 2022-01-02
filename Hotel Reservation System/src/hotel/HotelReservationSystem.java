@@ -55,8 +55,8 @@ public class HotelReservationSystem {
                 System.out.println("Email "+(i+1)+":");
                 customer[i].setCust_email(input.next());
             }
-            System.out.println("Number of Nights:");
-            booking.setBook_nights(input.nextInt());
+            System.out.println("Number of Days:");
+            booking.setBook_days(input.nextInt());
             
             System.out.println("Would you like a package holiday?");
             System.out.println("1. Yes/ 2. No");
